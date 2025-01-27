@@ -195,3 +195,33 @@ main div img{
         display: block;
     }
 }
+
+@media and (max-width: 800px) {
+    header img {
+        width: 100%; /* Se asegura de que la imagen se ajuste al contenedor */
+    }
+
+    nav ul {
+        text-align: center; /* Centra los enlaces */
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block; /* Los elementos de la lista se apilan */
+        margin-bottom: 10px; /* Espacio entre los enlaces */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    main {
+        padding: 0 15px; /* Añade espacio a los lados del main */
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        max-width: 560px; /* Limita el tamaño del iframe */
+    }
+}
