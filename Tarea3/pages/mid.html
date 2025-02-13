@@ -6,28 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/lol.css">
-
+    <style>
+        body {
+            background-color: #007ACC;
+        }
+        footer p {
+            color: #007f80;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .column {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mid img, .faker img {
+            width: 52%; /* Reduce en un 35% (de 80% a 52%) */
+            display: block;
+            margin: 0 auto;
+        }
+        .video-section iframe {
+            display: block;
+        }
+        .video-section .mobile-link {
+            display: none;
+        }
+        @media (max-width: 767px) {
+            .video-section iframe {
+                display: none;
+            }
+            .video-section .mobile-link {
+                display: block;
+            }
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="mid" style="text-align: center;">
-        <img src="../img/mid.jpg" alt="">
+    <div class="container">
+        <div class="column">
+            <div class="mid" style="text-align: center;">
+                <img src="../img/mid.jpg" alt="">
+            </div>
+
+            <main>
+                <h1>Mid Lane</h1>
+            </main>
+            <p>Mid laners are your high burst damage champions who can do it all—solo and as a team. For them, combat is a dangerous 
+                dance where they’re always looking for an opportunity to outplay their opponent.</p>
+
+            <section>
+                <h2>Champion's tier list on mid</h2>
+                <ol class="backgroundgeneral">
+                    <li>Vex</li>
+                    <li>Ahri</li>
+                    <li>Sylas</li>
+                </ol>
+            </section>
+
+            <section class="video-section">
+                <h2>All of Faker's Best Plays from the 2024 Worlds Finals</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ManUJpv4UYw?si=MofxGRrAOrY6_POw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <a class="mobile-link" href="https://www.youtube.com/watch?v=ManUJpv4UYw" target="_blank">Watch on YouTube</a>
+            </section>
+        </div>
+
+        <div class="column faker">
+            <img src="../img/fakermvp.jpg" alt="foto de un chico coreano con lentes jugador de league of legends">
+            <section>
+                <h2>Faker - The Unkillable Demon King</h2>
+                <p>Lee "Faker" Sang-hyeok is one of the most legendary professional players in the history of <em>League of Legends</em>. He has been the cornerstone of <strong>T1 (formerly SK Telecom T1)</strong> since 2013 and is widely regarded as the greatest player of all time.</p>
+                
+                <h3>Key Highlights of Faker's Career:</h3>
+                <ul>
+                    <li><strong>Three-Time World Champion</strong> 🏆🏆🏆 (2013, 2015, 2016) - Runner-up in 2017 and 2023.</li>
+                    <li><strong>Mid Lane Mastery:</strong> Known for his incredible mechanics, deep champion pool, and clutch plays. Signature champions: <em>LeBlanc, Zed, Ryze, Azir</em>.</li>
+                    <li><strong>Longevity and Consistency:</strong> Competing at the highest level for over a decade despite multiple roster changes.</li>
+                    <li><strong>Cultural and Global Icon:</strong> Dubbed the <em>"Unkillable Demon King"</em>, Faker has brought worldwide recognition to the LCK.</li>
+                    <li><strong>T1 Loyalty:</strong> Unlike many pros, Faker has remained with T1 throughout his career and is now part-owner of the team.</li>
+                </ul>
+            </section>
+        </div>
     </div>
-
-    <main>
-        <h1>Mid Lane</h1>
-    </main>
-    <p>Mid laners are your high burst damage champions who can do it all—solo and as a team. For them, combat is a dangerous 
-        dance where they’re always looking for an opportunity to outplay their opponent.</p>
-
-    <section>
-        <h2>Champion's tier list on mid</h2>
-        <ol class="backgroundgeneral">
-            <li>Vex</li>
-            <li>Ahri</li>
-            <li>Sylas</li>
-        </ol>
-    </section>
 
     <footer>
         <p>All rights reserved</p>
@@ -36,5 +105,5 @@
         </li>
     </footer>
 </body>
-
 </html>
+
