@@ -7,16 +7,13 @@
 body p {
   text-align: center;
 }
-
 body footer p {
-  color: red;
+  color: #9C1A15;
   margin-top: 10px;
 }
-
 body footer li a {
-  font-size: 1.3rem; /* Cambiado de 130% a una unidad consistente */
+  font-size: 130%;
 }
-
 body section {
   display: grid;
   place-items: center;
@@ -28,7 +25,7 @@ body section {
 }
 
 .backgroundgeneral {
-  background-color: aqua;
+  background-color: #1F91DC;
 }
 
 .onecolor {
@@ -38,15 +35,14 @@ body section {
 body main p {
   text-align: center;
   color: #fff;
-  font-size: 1.35rem;
+  font-size: 135%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
-
 body main h1 {
   padding-top: 2rem;
   text-align: center;
-  color: green;
+  color: #22AB74;
 }
 
 body nav ul {
@@ -58,7 +54,13 @@ body section iframe {
 }
 
 body section ol {
-  font-size: 1.25rem;
+  font-size: 25px;
+}
+
+header img, main div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .bodytop {
@@ -68,15 +70,15 @@ body section ol {
 body header nav ul {
   text-align: center;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 150%;
 }
 
 .topDescription {
-  padding: 1rem 0;
+  padding: 1rem 0 1rem 0;
 }
 
 ol li::marker {
-  font-size: 1.875rem; /* 30px equivalente en rem */
+  font-size: 30px;
 }
 
 .top img {
@@ -84,60 +86,32 @@ ol li::marker {
 }
 
 .fondotop {
-  color: red;
+  color: #9C1A15;
 }
 
 .boton {
   background-color: #000;
   color: #fff;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   margin-top: 30px;
   display: inline-block;
-  box-shadow: 10px 10px 10px grey;
+  box-shadow: 10px 10px 10px #808080;
   border-radius: 50px;
 }
 
-.bodyjungle {
-  background-color: #EDEFE6;
+@media screen and (min-width: 768px) {
+  .gridTier {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablets */
+    gap: 15px;
+  }
+  .gridTier img {
+    border-radius: 15px;
+  }
+  .boton {
+    font-size: 18px;
+    padding: 18px 30px;
+  }
 }
-
-.jungle img {
-  width: 200px;
-}
-
-.fondojungle {
-  color: lightgreen;
-}
-
-.mid img,
-.bot img,
-.supp img {
-  width: 200px;
-}
-
-.bodybot {
-  background-color: #F0F2F4;
-}
-
-.bodysupp {
-  background-color: #F8F8F8;
-}
-
-.bodyTier {
-  background-color: #000;
-}
-
-.headerTier {
-  display: flex;
-  text-decoration: none;
-}
-
-.img-viktor,
-.img-lulu,
-.img-nocturne {
-  display: none;
-}
-
 .gridTier {
   height: 70vh;
   display: grid;
@@ -147,55 +121,14 @@ ol li::marker {
   padding: 2rem;
   row-gap: 1rem;
 }
-
 @media screen and (min-width: 1024px) {
   .gridTier {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 40%);
     column-gap: 1rem;
   }
-
-  .gridTier .img-lulu,
-  .gridTier .img-viktor,
-  .gridTier .img-nocturne {
+  .gridTier .img-lulu, .gridTier .img-viktor, .gridTier .img-nocturne {
     display: block;
-  }
-}
-
-header img,
-main div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 800px) {
-  header img {
-    width: 100%; /* Se asegura de que la imagen se ajuste al contenedor */
-  }
-
-  nav ul {
-    text-align: center; /* Centra los enlaces */
-    margin-top: 10px;
-  }
-
-  nav ul li {
-    display: block; /* Los elementos de la lista se apilan */
-    margin-bottom: 10px; /* Espacio entre los enlaces */
-  }
-
-  nav ul li a {
-    font-size: 1rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
-  }
-
-  main {
-    padding: 0 15px; /* Añade espacio a los lados del main */
-  }
-
-  iframe {
-    width: 100%;
-    height: auto;
-    max-width: 560px; /* Limita el tamaño del iframe */
   }
 }
 

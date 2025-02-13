@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+
+    .gridTier {
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablets */
+      gap: 15px;
+    }
+  
+    .gridTier img {
+      border-radius: 15px;
+    }
+  
+    .boton {
+      font-size: 18px;
+      padding: 18px 30px;
+    }
+  }

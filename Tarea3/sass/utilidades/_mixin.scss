@@ -1,3 +1,6 @@
+// import de variables
+@import "../utilidades/variables";
+
 @mixin center {
     display: grid;
     place-items: center;

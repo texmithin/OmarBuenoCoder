@@ -1,0 +1,25 @@
+// Jungle Styles
+.bodyjungle {
+    background-color: $white;
+  }
+  
+  .jungle img {
+    width: 200px;
+  }
+  
+  .fondojungle {
+    color: $lightgreen;
+  }
+  
+  // Mid, Bot, Supp Styles
+  .mid img, .bot img, .supp img {
+    width: 200px;
+  }
+  
+  .bodybot {
+    background-color: $white;
+  }
+  
+  .bodysupp {
+    background-color: $white;
+  }

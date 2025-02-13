@@ -4,24 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css1/lol.css">
+    <title>Jungle Tier List</title>
+    <link rel="stylesheet" href="../css/lol.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 10px;
+        }
+        .jungle img {
+            width: 80%;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        /* Títulos */
+        h1, h2 {
+            margin: 15px 0;
+        }
+
+        /* Lista de campeones */
+        ol {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+
+        ol li {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        /* Botón */
+        .boton {
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 20px auto;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #222;
+        }
+    </style>
 </head>
 
 <body class="bodyjungle">
-    <div class="jungle" style="text-align: center;">
-        <img src="../img/jungle.jpg" alt="">
+
+    <!-- Imagen principal -->
+    <div class="jungle">
+        <img src="../img/jungle.jpg" alt="Jungle Role">
     </div>
 
+    <!-- Título -->
     <main>
         <h1 class="fondojungle">Jungle Lane</h1>
     </main>
-    <p>Junglers live for the hunt. Stalking between lanes with stealth and skill, they keep a close eye on the most important 
-        neutral monsters and pounce the moment an opponent lets their guard down.</p>
 
+    <!-- Descripción -->
+    <p>
+        Junglers live for the hunt. Stalking between lanes with stealth and skill, they keep a close eye on the most important 
+        neutral monsters and pounce the moment an opponent lets their guard down.
+    </p>
+
+    <!-- Lista de campeones -->
     <section>
-        <h2 class="fondojungle">Champion's tier list on jungle</h2>
+        <h2 class="fondojungle">Champion's Tier List on Jungle</h2>
         <ol class="backgroundgeneral">
             <li>Nocturne</li>
             <li>Graves</li>
@@ -29,12 +92,15 @@
         </ol>
     </section>
 
+    <!-- Footer con botón de regreso -->
     <footer>
         <p>All rights reserved</p>
-        <li style="list-style: none; text-align: center">
-            <a href="../index.html" class="boton">Volver a League of Legends</a>
-        </li>
+        <ul style="list-style: none; padding: 0;">
+            <li>
+                <a href="../index.html" class="boton">Volver a League of Legends</a>
+            </li>
+        </ul>
     </footer>
-</body>
 
+</body>
 </html>

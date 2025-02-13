@@ -1,0 +1,29 @@
+//import mixins
+@import "../utilidades/mixin";
+
+// Global Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+// General Styles
+body {
+  p {
+    text-align: center;
+  }
+  footer {
+    p {
+      color: $red;
+      margin-top: 10px;
+    }
+    li a {
+      font-size: 130%;
+    }
+  }
+  section {
+    @include center;
+    @include padding(1rem, 3rem, 0, 1rem);
+  }
+}

@@ -1,0 +1,47 @@
+
+
+.backgroundmain {
+    background-color: #091426;
+  }
+  
+  .backgroundgeneral {
+    background-color: $aqua;
+  }
+  
+  .onecolor {
+    color: $white;
+  }
+  
+  // Mobile Styles
+  body main {
+    p {
+      text-align: center;
+      color: $white;
+      font-size: 135%;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      @include padding(1rem, 1rem, 1rem, 1rem);
+    }
+    h1 {
+      padding-top: 2rem;
+      text-align: center;
+      color: $green;
+    }
+  }
+  
+  body nav ul {
+    padding-top: 1rem;
+  }
+  
+  body section iframe {
+    display: none;
+  }
+  
+  body section ol {
+    font-size: 25px;
+  }
+
+  header img, main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

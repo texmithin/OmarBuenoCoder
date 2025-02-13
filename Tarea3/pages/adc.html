@@ -4,24 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css1/lol.css">
+    <title>Bot Lane Tier List</title>
 
+    <link rel="stylesheet" href="../css/lol.css">
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 15px;
+            text-align: center;
+        }
+        .bot img {
+            width: 90%;
+            max-width: 350px; /* Evita que sea muy grande */
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        /* Títulos */
+        h1 {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #d9534f;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: 22px;
+            color: #0275d8;
+        }
+
+        /* Texto descriptivo */
+        p {
+            font-size: 16px;
+            padding: 10px;
+            color: #555;
+        }
+
+        /* Lista de campeones */
+        .backgroundgeneral {
+            background-color: #5bc0de;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .backgroundgeneral li {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        /* Botón */
+        .boton {
+            background-color: #343a40;
+            color: #fff;
+            padding: 12px;
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 30px;
+            width: 80%;
+            max-width: 250px;
+            margin-top: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #222;
+        }
+        @media screen and (max-width: 480px) {
+            .bot img {
+                max-width: 250px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .boton {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body class="bodybot">
-    <div class="bot" style="text-align: center;">
-        <img src="../img/adc.jpg" alt="">
+
+    <!-- Imagen principal -->
+    <div class="bot">
+        <img src="../img/adc.jpg" alt="Bot Lane Role">
     </div>
 
+    <!-- Título -->
     <main>
         <h1>Bot Lane</h1>
     </main>
-    <p>Bot lane champions are the dynamite of the team. As precious cargo, they need to be protected early on before amassing 
-        enough gold and experience to carry the team to victory.</p>
 
+    <!-- Descripción -->
+    <p>
+        Bot lane champions are the dynamite of the team. As precious cargo, they need to be protected early on before amassing 
+        enough gold and experience to carry the team to victory.
+    </p>
+
+    <!-- Lista de campeones -->
     <section>
-        <h2>Champion's tier list on bot lane</h2>
+        <h2>Champion's Tier List on Bot Lane</h2>
         <ol class="backgroundgeneral">
             <li>Jhin</li>
             <li>Jinx</li>
@@ -29,12 +126,13 @@
         </ol>
     </section>
 
+    <!-- Footer con botón de regreso -->
     <footer>
         <p>All rights reserved</p>
-        <li style="list-style: none; text-align: center">
+        <li style="list-style: none;">
             <a href="../index.html" class="boton">Volver a League of Legends</a>
         </li>
     </footer>
-</body>
 
+</body>
 </html>
